@@ -8,9 +8,9 @@ Group          = root
 LimitNOFILE    = 4096
 Restart        = always
 RestartSec     = 5s
-StandardOutput = append:/home/pocketbase/output.log #poner la ruta que toque
-StandardError  = append:/home/pocketbase/errors.log #poner la ruta que toque
-ExecStart      = /home/pocketbase/pocketbase serve pocketbased.MIDOMINIO.com #poner la ruta y el dominio/subdominio que toque
+StandardOutput = append:/pocketbased/output.log   #poner la ruta que toque y borrar este comentario
+StandardError  = append:/pocketbased/errors.log   #poner la ruta que toque y borrar este comentario
+ExecStart      = /pocketbased/pocketbase serve MIDOMINIO.com   #poner la ruta y el dominio/subdominio que toque y borrar este comentario
 
 [Install]
 WantedBy = multi-user.target
